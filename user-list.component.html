@@ -1,0 +1,9 @@
+<h1>CUSTOMERS</h1>
+ 
+<div *ngFor="let user of users | async" style="width: 300px;">
+  <userdetails [user]='user'></userdetails>
+</div>
+ 
+<div>
+  <button type="button" class="button btn-danger" (click)='deleteUsers()'>Delete All</button>
+</div>
